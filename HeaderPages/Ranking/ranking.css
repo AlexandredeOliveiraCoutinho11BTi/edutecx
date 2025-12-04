@@ -1,0 +1,54 @@
+@import url(../../global/global.css);
+
+/* COR DE FUNDO DA PÁGINA */
+body {
+    background: #194F22;  
+}
+
+/* CONTAINER */
+.ranking-container {
+    padding: 2rem;
+    position: relative;
+    text-align: center;
+}
+
+/* BOTÃO DE FECHAR */
+.close-btn {
+    font-size: 2.5rem;
+    background: none;
+    border: none;
+    color: var(--Verde-erva-doce);
+    cursor: pointer;
+    position: absolute;
+    left: 2rem;
+    top: 1rem;
+}
+
+/* COROA */
+.coroa {
+    width: 120px;
+    margin: 2rem auto;
+    display: block;
+}
+
+/* LISTA DE RANKING */
+.rank-list {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+/* ITEM DO RANKING */
+.rank-item {
+    background: white;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0.9rem 2rem;
+    border-radius: 40px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+}

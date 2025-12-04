@@ -1,0 +1,125 @@
+@import url(../../global/global.css);
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #1f4c30;
+}
+
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: #173d22;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    border-bottom: 4px solid #0f331a;
+}
+
+header nav a {
+    color: white;
+    margin-left: 25px;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    display: flex;
+    height: calc(100vh - 70px);
+}
+
+
+.left {
+    width: 115%;
+    color: white;
+    text-align: center;
+    padding-top: 180px;
+}
+
+.left h2 {
+    font-size: 20px;
+    line-height: 24px;
+    color: #A6BED9;
+}
+
+
+form {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input {
+    width: 400px;
+    height: 55px;
+    border-radius: 25px;
+    border: none;
+    padding: 0 15px;
+    font-family: inherit;
+    margin-bottom: 20px;
+}
+
+.btn-cadastrar {
+    width: 400px;
+    height: 45px;
+    background-color: #2ecc40;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.entrar {
+    margin-top: 15px;
+}
+
+.entrar a {
+    text-decoration: none;
+    color: #cce0ff;
+    display: block;
+    margin-top: 5px;
+}
+
+.right {
+    width: 50%;
+    background: linear-gradient(#4ec0ff, #2898dd);
+    position: relative;
+    background-size: cover;
+    
+}
+
+.play-btn {
+    position: absolute;
+    top: 170px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 280px;
+    height: 70px;
+    background-color: #ffcb00;
+    border: 6px solid black;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.personagem {
+    width: 350px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.right img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+
+}

@@ -48,3 +48,37 @@ window.addEventListener("click", (e) => {
         popup.style.display = "none";
     }
 });
+
+function init(){
+    const navUl = document.querySelector("nav ul")
+
+    const user = JSON.parse(sessionStorage.getItem("user"))
+
+    if(user){
+        navUl.innerHTML += `
+        <li>
+         <a href="./HeaderPages/Jogo.2/index.html">Jogar</a>
+        </li>
+        <li><h2>Usuário: ${user.name}</h2></li>
+        <li><button id = "logout">Sair</button></li>
+        
+        `
+
+        const logoutButton = document.querySelector("#logout")
+        logoutButton.addEventListener("click", logout)
+        return
+    }
+
+    navUl.innerHTML += `
+    <li>
+        <a href="./HeaderPages/Login/login.html">Login</a>
+    </li>
+    `
+}
+
+function logout(){
+    sessionStorage.removeItem("user")
+    window.location.reload()
+}
+
+init()
